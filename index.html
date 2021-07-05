@@ -18,13 +18,38 @@
     h4{
         color: green;
     }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
 
+    }
+    .card-img-top{
+        height: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .card{
+        border-radius: 15px;
+        border: 1px solid black;
+        height: max-content;
+    }
+    .card-body{
+        height: 400px;
+    }
+@media (min-width:600px){
+    .row{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 </style>
 <body>
     
     <h3>A Collection of Cat Breed's</h3>
     <div class="container">
-        <div id="row" class="ROW">
+        <div id="row" class="row">
 
         </div>
 
