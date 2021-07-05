@@ -5,6 +5,7 @@ fetch(catUrl)
     return res.json();
 })
 .then(result=>{
+    console.log(result);
    display(result);
 })
 .catch(error=>{
@@ -18,7 +19,7 @@ function display(data){
     data.forEach((element) => {
 
         let col=document.createElement('div');
-        col.setAttribute('class','col-sm-4 col-md-4 col-lg-4')
+        col.setAttribute('class','col-sm-12')
 
         let card=document.createElement('div');
         card.setAttribute('class','card');
